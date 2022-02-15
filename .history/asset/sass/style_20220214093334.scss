@@ -1,0 +1,27 @@
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    
+}
+
+.header__left{
+    display: flex;
+    &-logo{
+        padding: 42px 20px;
+    }
+    &-menu{
+        margin-left: 16px;
+        
+        &-item{
+            display: inline-block;         
+            border-bottom: 2px solid var;
+        }
+        &-item-title{
+            display: inline-block;
+            padding: 48px 18px ;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    
+}
+
+.header__left{
+    display: flex;
+    &-logo{
+        padding: 42px 20px;
+    }
+    &-menu{
+        margin-left: 16px; 
+        &-item{
+            display: inline-block; 
+            // border-bottom: 4px solid $Color_primary;  
+            margin: 0 16px;      
+        }
+        &-item-title{
+            display: inline-block;
+            padding: 48px 0;
+            color :  ;
+        }
+    }
+}

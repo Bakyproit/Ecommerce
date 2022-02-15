@@ -1,0 +1,165 @@
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e8e7ec;
+    .header__left{
+        display: flex;
+        &-logo{
+            padding: 48px 20px;
+        }
+        &-menu{
+            margin-left: 16px; 
+            transition: all linear 0.2s;
+            &-item{
+                display: inline-block; 
+                margin: 0 16px;      
+            }
+            &-item-link{
+                display: inline-block;
+                padding: 48px 0;
+                color : #1d2025 ;
+                font-size: 16px;
+            }
+            &-item-link:hover{
+                border-bottom: 4px solid $Color_primary;
+            }
+        }
+    }
+    .header__right {
+        display: flex;
+        &-cart{
+            color : $Black ; 
+            padding: 42px 20px;
+            cursor: pointer;
+            position: relative;
+            &-notice{
+                padding: 1px 6px;
+                background-color: $Color_primary;
+                color : $White ;
+                border:1px solid #EE4D2D ;
+                border-radius: 10px;
+                font-size: 12px;
+                line-height: 12px;
+                position: absolute;
+                top:34px;
+                right:10px ;
+                display: none;
+            }
+        }
+        &-cart:hover .header__cart{
+            display: block;
+        }
+        .header__cart{
+            width: 360px;
+            position: absolute;
+            top:70% ; 
+            right: 0 ;
+            background-color: $White;
+            box-shadow: 2px 6px 10px $Grayish_blue ;
+            border-radius: 4px;
+            display: none;
+            index : 2 ;
+            &-heading{
+                font-size: 24px;
+                color : $Black ;
+                display: block;
+                padding: 10px 20px;  
+                border-bottom: 1px solid #e8e7ec;
+            }
+            &-message{
+                display: inline-block;
+                color : $Dark_grayish_blue ;
+                font-weight: 700;
+                margin : 80px 100px;
+                display: none;
+            }
+            &-list{
+                display: none;
+            }
+    
+            &-item{
+                display: flex;
+                padding: 24px;
+                &-img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 4px;
+                }
+                &-info{
+                    display: flex;
+                    padding-left:20px;
+                }
+                &-heading{
+                    padding-right: 30px;
+                    &-name{
+                        color: $Grayish_blue ;
+                        font-size: 16px;
+                    }
+                }
+                &-price-wrap{
+                    padding-top: 10px;
+                    color: $Grayish_blue ;
+                }
+                &-equal{
+                    color : $Black ;
+                    font-weight: 700;
+                }
+                &-icon{
+                    padding-top: 15px;
+                }
+            }
+            &-buttom{
+                margin: 0 24px 30px 24px;
+                padding: 21px 120px;
+                border-radius: 12px;
+                color:$White ;
+                background-color: $Color_primary;
+                display: none;
+            }
+    
+        }
+        .header__cart--no-cart .header__cart-message{
+            display: block ;
+        }
+        .header__cart--yes-cart .header__cart-list,
+        .header__cart--yes-cart .header__cart-buttom{
+            display: block;
+        }
+        .header__cart--yes-cart.header__right-cart-notice{
+            display: block;
+        }
+    
+        &-avatar{
+            width: 40px;
+            height: 40px;
+            border-radius:40px ;
+            border : 1px solid $Color_primary ;
+            margin: 28px 10px auto 10px;
+            cursor: pointer;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.product{
+    &-img{
+        &-main{
+            width: 450px;
+            &-1{
+                width: 100%;
+            }
+        }
+        &-sub{
+            width: 90px;
+            
+        }
+    }
+}
+
+

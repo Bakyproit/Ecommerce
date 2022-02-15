@@ -1,0 +1,24 @@
+
+// mobile
+@media (max-width : 414px){
+    
+    .header{
+        .header__left{
+            &-menu{
+                display: none;
+            }
+        }
+    }
+}
+
+
+// Desktop
+@media (max-width: 1440px){
+    .header{
+        .header__left{
+            .mobile-menu-icon{
+                display: none;
+            }
+        }
+    }
+}

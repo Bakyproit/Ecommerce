@@ -1,0 +1,25 @@
+
+// mobile
+@media (max-width : 414px){
+    
+    .header{
+        .mobile-menu-icon{
+            display: block;
+        }
+        .header__left{
+            &-menu{
+                display: none;
+            }
+        }
+    }
+}
+
+
+// Desktop
+@media (max-width: 1440px){
+    .header{
+        .mobile-menu-icon{
+            display: none;
+        }
+    }
+}

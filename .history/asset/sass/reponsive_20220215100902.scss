@@ -1,0 +1,18 @@
+
+// mobile
+@media (max-width : 1em){
+    
+    .header{
+        .header__left{
+            &-menu{
+                display: none;
+            }
+        }
+    }
+}
+
+
+// Desktop
+@media (max-width: 3.4782em){
+
+}

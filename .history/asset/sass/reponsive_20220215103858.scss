@@ -1,0 +1,45 @@
+
+// mobile
+@media (max-width : 414px){
+    .wrapper{
+        width: 100%;
+    }
+    .header{
+        border-bottom: none;
+        .header__left{
+            &-menu{
+                display: none;
+            }
+
+        }
+        .header__right{
+            &-avatar{
+                width: 30px;
+                height: 30px;
+                margin-top: 33px;
+            }
+        }
+    }
+    .product{
+        margin: 0;
+
+        &-img{
+            &-main{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+// Desktop
+@media (min-width:415px) and (max-width: 1440px){
+    .header{
+        .mobile-menu-icon{
+            display: none;
+        }
+    }
+}
