@@ -235,8 +235,8 @@
   position: relative;
 }
 .product-img-main-left, .product-img-main-right {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #fff;
   display: flex;
@@ -246,12 +246,12 @@
 .product-img-main-left {
   position: absolute;
   top: 50%;
-  left: 20px;
+  left: -15px;
 }
 .product-img-main-right {
   position: absolute;
   top: 50%;
-  right: 20px;
+  right: -15px;
 }
 .product-img-main img {
   width: 100%;
@@ -263,7 +263,7 @@
   justify-content: space-between;
 }
 .product-img-sub .default {
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .product-img-sub-1, .product-img-sub-2, .product-img-sub-3, .product-img-sub-4 {
   width: 90px;
@@ -381,6 +381,51 @@
   opacity: 0.6;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.modal-cotainer {
+  animation: fade linear 0.2s;
+}
+.modal-close {
+  position: relative;
+  left: 75%;
+  margin-bottom: 5px;
+}
+.modal-close i {
+  font-size: 20px;
+  color: #fff;
+}
+.modal-img .product-img-sub {
+  justify-content: space-around;
+}
+.modal-img .product-img-sub-1, .modal-img .product-img-sub-2, .modal-img .product-img-sub-3, .modal-img .product-img-sub-4 {
+  width: 60px;
+}
+
+.modal.open {
+  display: flex;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+    transform: scale(0.2);
+  }
+  to {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+}
 * {
   box-sizing: border-box;
   padding: 0;

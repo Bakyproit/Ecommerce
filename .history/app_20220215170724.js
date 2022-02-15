@@ -1,0 +1,2 @@
+
+const buyImg = document
