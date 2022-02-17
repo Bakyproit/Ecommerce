@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="./asset/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wrapper">
+        <!--menu-mobile -->
+        <div class="nav">
+
+            <input type="checkbox" name="" id="nav-mobile-input" class="nav-input">
+            <label for="nav-mobile-input"  class="nav-overlay"></label>
+            
+            <nav class="nav__mobile">
+                <label for="nav-mobile-input" class="nav__mobile-close">
+                    <img src="./asset/images/icon-close.svg" alt="" class="menu-icon">
+                </label>
+                <ul class="nav__mobile-list">
+                    <li>
+                        <a href="" class="nav__mobile-link">Collections</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">Men</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">Women</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">About</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav__mobile-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- end menu-mobile -->
+        <!-- Beggin header -->
+        <div class="header">
+            <label for="nav-mobile-input" class="mobile-menu-icon">
+                <img src="./asset/images/icon-menu.svg" alt="" class="menu-icon">
+            </label>
+            <div class="header__left">
+                <div class="header__left-logo">
+                    <img src="./asset/images/logo.svg" alt="">
+                </div>
+
+                <!-- menu-PC -->
+                <div class="header__left-menu">
+                    <ul class="header__left-menu-list">
+                        <li class="header__left-menu-item">
+                            <a href="" class="header__left-menu-item-link">Collections</a>
+                        </li>
+                        <li class="header__left-menu-item">
+                            <a href="" class="header__left-menu-item-link">Men</a>
+                        </li>
+                        <li class="header__left-menu-item">
+                            <a href="" class="header__left-menu-item-link">Women</a>
+                        </li>
+                        <li class="header__left-menu-item">
+                            <a href="" class="header__left-menu-item-link">About</a>
+                        </li>
+                        <li class="header__left-menu-item">
+                            <a href="" class="header__left-menu-item-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end menu-PC -->
+            </div>
+            <div class="header__right">
+                <div class="header__right-cart">
+                    <img src="./asset/images/icon-cart.svg" alt="">
+                    <!-- cart-list--yes-cart-->
+                    <span class="header__right-cart-notice" id = "numbercartnotice">0</span>
+
+                    <div class="header__cart">
+                        <h3 class="header__cart-heading">Cart</h3>
+                        <span class="header__cart-message">Your cart is empty</span>
+                        
+                        <ul class="header__cart-list">
+                            <li class="header__cart-item">
+                                <img src="./asset/images/image-product-1.jpg" alt=""
+                                class="header__cart-item-img">
+
+                                <div class="header__cart-item-info">
+                                    <div class="header__cart-item-heading">
+                                        <div class="header__cart-item-heading-name">
+                                            Fall Limited Edition Sneakers
+                                        </div>
+                                        <div class="header__cart-item-price-wrap">
+                                            <span class="header__cart-item-price">$125.00</span>
+                                            <span class="header__cart-item-multiply">x</span>
+                                            <span class="header__cart-item-quantity">3</span>
+                                            <span class="header__cart-item-equal">$375.00</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__cart-item-icon">
+                                        <img src="./asset/images/icon-delete.svg" alt="">
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <div class="header__cart-buttom">Checkout</div>  
+                    </div>
+                </div>
+                <div class="header__right-avatar">
+                    <img src="./asset/images/image-avatar.png" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- end header -->
+        <!-- Beggin container -->
+        <div class="container">
+            <div class="product">
+                <div class="product-img">
+                    <div class="product-img-main" id="js-buy-model">
+                        <div class="product-img-main-left">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+
+                        <div class="product-img-main-item">
+                            <img src="./asset/images/image-product-1.jpg" alt="" id ="imgBox">
+                        </div>
+                        
+                        <div class="product-img-main-right">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="product-img-wrrap">
+                        <!-- default -->
+                        <div class="product-img-sub">
+                            <img src="./asset/images/image-product-1.jpg" alt="" class="box default">
+                        </div>
+                        <div class="product-img-sub">
+                            <img src="./asset/images/image-product-2.jpg" alt="" class="box">
+                        </div>
+                        <div class="product-img-sub">
+                            <img src="./asset/images/image-product-3.jpg" alt=""class="box">
+                        </div>
+                        <div class="product-img-sub">
+                            <img src="./asset/images/image-product-4.jpg" alt="" class="box">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-information">
+                    <div class="product-information-title">SNEAKER COMPANY</div>
+                    <div class="product-information-name">Fall Limited Edition Sneakers</div>
+                    <div class="product-information-description">
+                        <p>These low profile sneakers are your perfect casual wear
+                            companion. Featurning a durable rubber outer sole, they'll 
+                            withstand everything the weather can offer .
+                        </p>
+                    </div>
+
+                    <div class="product-information-price-wrrap">
+                        <div class="product-information-price">
+                            <div class="product-information-price-sale">$125.00</div>
+                            <div class="product-information-price-percent-sale">50%</div>
+                        </div>
+                        <div class="product-information-cost">$250.00</div>
+                    </div>
+
+                    <div class="product-information-add-cart">
+                        <div class="product-information-quantity">
+                            <div class="product-information-quantity-minus" id="minus">-</div>
+                            <div class="product-information-quantity-number" id="numbercart">0</div>
+                            <div class="product-information-quantity-plus" id="plus">+</div>
+                        </div>
+                        <div class="product-information-button" id ="addnumbercart">
+                            <img src="./asset/images/icon-cart.svg" alt="" class="product-information-button-icon">
+                            <div class="product-information-button-title">Add to cart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+
+        <!-- modal -->
+            <div class="modal js-modal">
+                <div class="modal-container js-modal-container">
+                    <div class="modal-close js-modal-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <!--  -->
+                    <div class="modal-img product-img">
+                        <div class="product-img-main-left" id ="modalimgBoxLeft">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="modal-img-main product-img-main">
+                           
+                            <div class="product-img-main-item">
+                                <img src="./asset/images/image-product-1.jpg" alt="" id ="modalimgBox" >
+                            </div>
+
+                        </div>
+                        <div class="modal-img-sub product-img-wrrap">
+                            <!-- default -->
+                            <div class="product-img-sub">
+                                <img src="./asset/images/image-product-1.jpg" alt="" class="modalBox default">
+                            </div>
+                            <div class="product-img-sub">
+                                <img src="./asset/images/image-product-2.jpg" alt="" class="modalBox">
+                            </div>
+                            <div class="product-img-sub">
+                                <img src="./asset/images/image-product-3.jpg" alt=""class="modalBox">
+                            </div>
+                            <div class="product-img-sub">
+                                <img src="./asset/images/image-product-4.jpg" alt="" class="modalBox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- end modal -->
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
